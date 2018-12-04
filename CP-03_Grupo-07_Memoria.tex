@@ -5,7 +5,7 @@
 \usepackage{hyperref} %Enlaces en la documentacion
 \usepackage{graphicx} %Usar imagenes
 \graphicspath{{./media/}}
-\usepackage[nottoc,numbib]{tocbibind} %Referencias aparece en el indice
+\usepackage[numbib]{tocbibind} %Referencias aparece en el indice
 \usepackage{float}
 
 %opening
@@ -32,8 +32,9 @@
 
 
 \section{Introducción}
-\subsection{Motivación}
 \subsection{Descripción de los sitios}
+El primer sitio que vamos a utilizar para el imforme de internalización es el sitio web de la compañia BMW. BMW es un fabricante alemán de vehículos de alta gama, lider mundial en ventas de vehículos de alta gama \cite{bmwref3}.\\
+Para el segundo sitio web hemos seleccionado ??
 
 \section{Informe de internalización}
 \subsection{Procedimiento}
@@ -74,7 +75,7 @@ Pagina principal, BMW M3, Contáctenos
 \begin{itemize}
 \item \textbf{Sistema de codificación utilizado:}\\
 UTF-8
-\item \textbf{Elementos analizados:}\\
+\item \textbf{Elementos analizados:}
 \begin{itemize}
   \item \textbf{Texto:}\\
   El texto de las páginas seleccionadas se encuentra traducido correctamente para las distintas codificaciones. Se puede destacar que algunas palabras no estan traducidas, pero es razonable ya que son marcas registradas de la empresa por lo tanto no tienen una traducción y si se tradujesen dejarian de tener sentido.\\
@@ -83,38 +84,85 @@ UTF-8
   \item \textbf{Imágenes:}\\
   Como es normal, las imagenes mantienen su posicion original en las distintas versiones de la web.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.35]{imjp.png}
+  \caption{Pantalla principal de la web en japonés}
+  \label{fig:imagenesjp}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.35]{imsp.png}
+  \caption{Pantalla principal de la aplicación en español}
+  \label{fig:imagenessp}
+\end{figure}
+
+
+  \item \textbf{Iconos:}\label{iconos}\\
+  La mayoria de iconos que nos encontramos en la web son siempre iguales para todas las versiones de la web. Aunque cabe destacar que para algunas es posible que nos encontremos con iconos que en las otras no aparezcan. Por ejemplo, como vemos en las figuras \ref{fig:iconosabudabi} y \ref{fig:iconosjapo}, en la version de Abu Dhabi nos encontramos con iconos de redes sociales que no aparecen en las otras versiones.
+
   \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{imjp.png}
-    \caption{Pantalla principal de la web en japonés}
-    \label{fig:imagenesjp}
+    \includegraphics[scale=0.4]{RSS_abudabi.png}
+    \caption{Iconos de redes sociales en la versión en árabe}
+    \label{fig:iconosabudabi}
   \end{figure}
   \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{imsp.png}
-    \caption{Pantalla principal de la aplicación en español}
-    \label{fig:imagenessp}
+    \includegraphics[scale=0.6]{RSS_japo.png}
+    \caption{Iconos de redes sociales en la versión en japonés}
+    \label{fig:iconosjapo}
   \end{figure}
-
-
-  \item \textbf{Iconos:}\\
-  La mayoria de iconos que nos encontramos en la web son siempre iguales para todas las versiones de la web. Aunque cabe destacar que para algunas es posible que nos encontremos con iconos que en las otras no aparezcan. Por ejemplo, como vemos en la figura ??????, en la version de Abu Dhabi nos encontramos con iconos de redes sociales que no aparecen en las otras versiones.
-
 
   \item \textbf{Precios:}\\
   Al analizar una web de un fabricante de automóviles, uno de los cambios que hemos detectado mas facilmente es el del precio de los vehículos. En la web española se usa el formato occidental (puntos) y en la web japonesa nos encontramos con el formato japones (comas).
 
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{precioespanol.png}
+    \caption{Precio en formato occidental}
+    \label{fig:precioesp}
+  \end{figure}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{preciojapo.png}
+    \caption{Precio en formato japonés}
+    \label{fig:preciojap}
+  \end{figure}
+
   \item \textbf{Composición:}\\
   Generalmente, aunque se diferencien en algunas partes, la composición de la web es común para todas las versiones.\\
-  Lo que si es destacable es que la versión arabe ajusta el diseño y la composición al lenguaje. Como vemos en la figura ???? las distintas versiones de los coches se encuentran del resvés.\\
+  Lo que si es destacable es que la versión arabe ajusta el diseño y la composición al lenguaje. Como vemos en la figura \ref{fig:m8arab} las distintas versiones de los coches se encuentran del revés.\\
   Aunque parece ser que se se han olvidado de la version ``THE 8'' en la página arabe.
 
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{modelo8_ingles.png}
+    \caption{Composición de la web en inglés}
+    \label{fig:m8eng}
+  \end{figure}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.31]{modelo8_arab.png}
+    \caption{Composición de la web en árabe}
+    \label{fig:m8arab}
+  \end{figure}
+
+
   \item \textbf{Elementos culturales:}\\
-  No hay cambios destacables en las distintas versiones, salvo el uso de los iconos de redes sociales que se ha explicado anteriormente en el apartado ????
+  No hay cambios destacables en las distintas versiones, salvo el uso de los iconos de redes sociales que se ha explicado anteriormente en el apartado \ref{iconos}
 \end{itemize}
 
 \item \textbf{Mecanismo de navegación entre versiones localizadas:}\\
-Para seleccionar la version de la web que queremos visitar existe una pantalla de selección en la que podemos seleccionar la web del país que queremos visitar. Así mismo, algunos paises nos permiten seleccionar el idioma que mostraran en la web.github
+Para seleccionar la version de la web que queremos visitar existe una pantalla de selección en la que podemos seleccionar la web del país que queremos visitar. Así mismo, algunos paises nos permiten seleccionar el idioma que mostraran en la web.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{elige_idioma.png}
+  \caption{Pantalla de seleccion de país de la web}
+  \label{fig:selectpais}
+\end{figure}
+
 
 \end{itemize}
 
@@ -124,6 +172,7 @@ Para seleccionar la version de la web que queremos visitar existe una pantalla d
 Como conclusion general podemos afirmar que la web del grupo BMW está bastante bien internacionalizada. El nivel de la web en esta materia es bastate elevado, algo razonable para una compañia de este calibre. Además cabe destacar que existen más de 100 localizaciones distintas.
 
 \item \textbf{Propuesta de mejora:}\\
+??
 
 
 \end{itemize}
@@ -251,7 +300,10 @@ W3C,
 \textit{W3C Internationalization Checker},
 \href{http://validator.w3.org/i18n-checker/}{Página Web}.
 
-
+\bibitem{bmwref3}
+Motor.es,
+\textit{BMW sigue siendo el rey de las ventas en los coches Premium},
+\href{https://www.motor.es/noticias/bmw-sigue-siendo-el-rey-de-las-ventas-en-los-coches-premium.php}{Página Web}.
 
 
 \end{thebibliography}
