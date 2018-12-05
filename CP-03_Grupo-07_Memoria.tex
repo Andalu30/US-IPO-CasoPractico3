@@ -33,8 +33,7 @@
 
 \section{Introducción}
 \subsection{Descripción de los sitios}
-El primer sitio que vamos a utilizar para el imforme de internalización es el sitio web de la compañia BMW. BMW es un fabricante alemán de vehículos de alta gama, lider mundial en ventas de vehículos de alta gama \cite{bmwref3}.\\
-Para el segundo sitio web hemos seleccionado ??
+El sitio que vamos a utilizar tanto para el informe de internalización como el de accesibilidad es el sitio web de la compañia BMW. BMW es un fabricante alemán de vehículos de alta gama, lider mundial en ventas de vehículos de alta gama \cite{bmwref3}.\\
 
 \section{Informe de internalización}
 \subsection{Procedimiento}
@@ -64,7 +63,9 @@ Para el segundo sitio web hemos seleccionado ??
 \item \textbf{Nombre del sitio:}\\
 BMW
 \item \textbf{URL:}\\
-\url{www.bmw.com}
+\url{www.bmw.es}\\
+\url{www.bmw.co.jp}\\
+\url{www.bmw-abudhabi.com}
 \item \textbf{Versiones localizadas estudiadas:}\\
 Español-España, Árabe-Abu Dhabi, Japonés-Japón
 \item \textbf{Páginas analizadas:}\\
@@ -172,7 +173,7 @@ Para seleccionar la version de la web que queremos visitar existe una pantalla d
 Como conclusion general podemos afirmar que la web del grupo BMW está bastante bien internacionalizada. El nivel de la web en esta materia es bastate elevado, algo razonable para una compañia de este calibre. Además cabe destacar que existen más de 100 localizaciones distintas.
 
 \item \textbf{Propuesta de mejora:}\\
-??
+Añadir la seccion ``THE 8'' a la versión en árabe de la web. Por lo demás no hemos visto nada que se pueda mejorar.
 
 
 \end{itemize}
@@ -191,17 +192,21 @@ Como conclusion general podemos afirmar que la web del grupo BMW está bastante 
 \subsection{Herramientas}
 Herramientas para modificar las condiciones de visualización de las paginas:
 \begin{itemize}
-  \item AAA
+  \item Web developer extension (Firefox) \cite{webdevel}
+  \item Colorblind Web Page Filter \cite{colorblind}
 \end{itemize}
 
 Navegadores especializados:
 \begin{itemize}
-  \item AAA
+  \item Navegador de texto elinks \cite{elinks}
+  \item Navegador para deficientes visuales WebbIE \cite{webbie}
 \end{itemize}
 
 Herramientas de evaluación automática de la accesibilidad web:
 \begin{itemize}
-  \item AAA
+  \item TAW \cite{taw}
+  \item Wave \cite{wave}
+  \item Color Contrast Analyzer \cite{colorcontrast}
 \end{itemize}
 
 \subsection{Informe}
@@ -218,44 +223,134 @@ Herramientas de evaluación automática de la accesibilidad web:
 \subsubsection{Datos del sitio analizado}
 \begin{itemize}
 \item \textbf{Nombre del sitio:}\\
+BMW
 \item \textbf{URL:}\\
+\url{www.bmw.es}\\
 \item \textbf{Versiones localizadas estudiadas:}\\
+Español-España, Árabe-Abu Dhabi, Japonés-Japón
 \item \textbf{Páginas analizadas:}\\
+Pagina principal, BMW M3, Contáctenos
 \end{itemize}
 
 \subsubsection{Herramientas utilizadas}
 \begin{itemize}
-  \item \textbf{AAA}
-  \item \textbf{AAA}
+\item Web developer extension (Firefox) \cite{webdevel}
+\item Colorblind Web Page Filter \cite{colorblind}
+\item Navegador de texto elinks \cite{elinks}
+\item Navegador para deficientes visuales WebbIE \cite{webbie}
+\item TAW \cite{taw}
+\item Wave \cite{wave}
+\item Color Contrast Analyzer \cite{colorcontrast}
 \end{itemize}
 
 \subsubsection{Comprobación de la visualización}
 \begin{itemize}
-  \item \textbf{Visualización sin imágenes}
-  \item \textbf{Visualización sin hojas de estilo}
-  \item \textbf{Simulación en blanco y negro}
-  \item \textbf{Simulación de deficiencias visuales}
-  \item \textbf{Uso de un navegador de texto}
-  \item \textbf{Uso de un navegador de voz}
+  \item \textbf{Visualización sin imágenes}\\
+  Eliminamos imágenes: cuando utilizamos el plugin para eliminar las imágenes de la web lo que ocurre es que todas la imágenes que se encuentran en la web desparecen y sólo se queda los enlaces o textos impresos en pantalla.\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.35]{web_sin_imagen.png}
+  \caption{Web sin imágenes}
+  \label{fig:nimage}
+\end{figure}
+
+  \item \textbf{Visualización sin hojas de estilo}\\
+  Cuando eliminamos el CSS la web se nos muestra como un árbol de enlaces con una estructura de los enlaces a las diferente páginas de la web.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{web_sin_css.png}
+    \caption{Web sin guias de estilo.}
+    \label{fig:nicss}
+  \end{figure}
+
+  \item \textbf{Simulación en blanco y negro}\\
+  Tal y como podemos ver en las dos figuras, la página web se comporta bastante bien al cambiarla a blanco y negro. El uso de color es bastante escaso y el poco que hay no tiene mucha importancia.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{byn1.png}
+    \caption{Web en blanco y negro}
+    \label{fig:byn1}
+  \end{figure}
+
+
+  \item \textbf{Simulación de deficiencias visuales}\\
+  Al utilizar un simulador de deficiencias visuales nos encontramos con los mismo problemas que al usar un simulador de blanco y negro. Los colores de la web se ven modificados pero no suponen un problema ya que a los colores no se le da tanta importancia.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{tritanopia.png}
+    \caption{Web con un fitro que asemeja la tritanopia.}
+    \label{fig:trit}
+
+  \end{figure}
+  \item \textbf{Uso de un navegador de texto}\\
+
+Al usar un navegador de texto nos encontramos los mismos problemas que al quitar el css de la web. La pagina sigue siendo usable pero no de la forma mas intuitiva.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{navtexto1.png}
+    \caption{Web al visualizarse en un navegador de texto.}
+    \label{fig:nicss}
+\end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35]{navtexto2.png}
+      \caption{Web al visualizarse en un navegador de texto}
+      \label{fig:nicss}
+  \end{figure}
+  \item \textbf{Uso de un navegador de voz}\\
+  En cuanto a navegador por voz, usando la aplicación webbIE vemos que la página describe los enlaces y nos permite acceder a ellos, pero aún así la página no termina de adaptarse bien a la traducción para ciegos ya que los desplegables y enlaces en las imágenes no funcionan correctamente.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.25]{audio.jpeg}
+      \caption{Visualización de la web con el navegador WebbIE}
+      \label{fig:nicss}
+      \end{figure}
 \end{itemize}
 
 \subsubsection{Evaluación automática}
 \begin{itemize}
-  \item \textbf{Herramienta 1}
-  \item \textbf{Herramienta 2}
+  \item \textbf{Herramienta 1: TAW}\\
+  Como podemos ver, la pagina no cumple con las expectativas de TAW. Tiene 37 problemas y mas de 480 warnings.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{taw.png}
+    \caption{Resultados de aplicar la herramienta TAW}
+    \label{fig:nicss}
+\end{figure}
+  \item \textbf{Herramienta 2: Wave}\\
+  Al utilizar Wave vemos que aunque la web sigue teniendo errores y warnings, no son tantos como los obtenidos con TAW.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{wave.png}
+    \caption{Resultados de aplicar la herramienta Wave}
+    \label{fig:nicss}
+\end{figure}
 \end{itemize}
 
 \subsubsection{Evaluación manual}
 \begin{itemize}
-  \item \textbf{Lista de comprobación utilizada}
+  \item \textbf{Lista de comprobación utilizada}\\
+  Web Content Accessibility Guidelines (WCAG) 2.0
   \item \textbf{Resultados de la evaluación}
+  \begin{itemize}
+    \item Principio 1: Las imagenes de la web no tienen atributo alt, lo que hace que cuando se visualizen con un navegador de texto no se sepa que indican.
+    \item Principio 2: Ningún error encontrado.
+    \item Principio 3: El comportamiento de la web es completamente previsible. Ningún error en este apartado.
+    \item Principio 4: La web es robusta, algo razonable en una compañia de este calibre.
+  \end{itemize}
+
 
 \end{itemize}
 
 \subsubsection{Conclusiones}
 \begin{itemize}
-  \item \textbf{Conclusiones generales}
-  \item \textbf{Propuestas de mejora}
+  \item \textbf{Conclusiones generales}\\
+  La página web es razonablemente accesible a personas con distintas discapacidades. Por ejemplo a una persona con deficiencias visuales no deberia de suponerle ningún problema. Sin embargo, las personas invidentes es posible que se encuentren con mas de un problema.
+  \item \textbf{Propuestas de mejora}\\
+  Solucionar los errores de las evaluaciones automáticas. Especialmente los de Wave.
 \end{itemize}
 
 
@@ -304,6 +399,44 @@ W3C,
 Motor.es,
 \textit{BMW sigue siendo el rey de las ventas en los coches Premium},
 \href{https://www.motor.es/noticias/bmw-sigue-siendo-el-rey-de-las-ventas-en-los-coches-premium.php}{Página Web}.
+
+
+\bibitem{colorblind}
+Toptal,LCC ,
+\textit{Colorblind Web Page Filter},
+\href{https://www.toptal.com/designers/colorfilter}{Página Web}
+
+\bibitem{webdevel}
+chrispederick,
+\textit{Web Developer},
+\href{https://addons.mozilla.org/es/firefox/addon/web-developer/}{Página Web}
+
+
+\bibitem{elinks}
+ELinks,
+\textit{ELinks},
+\href{http://elinks.or.cz/}{Página Web}
+
+\bibitem{webbie}
+WebbIE,
+\textit{WebbIE},
+\href{http://www.webbie.org.uk/es/}{Página Web}
+
+
+\bibitem{taw}
+TAW,
+\textit{Web accesibiliity test},
+\href{https://www.tawdis.net/}{Página Web}
+
+\bibitem{wave}
+Dinolytics,
+\textit{Web accesibiliity evaluation tool},
+\href{https://wave.webaim.org/}{Página Web}
+
+\bibitem{colorcontrast}
+The paciello group,
+\textit{Color Contrast Analyzer},
+\href{https://developer.paciellogroup.com/resources/contrastanalyser/}{Página Web}
 
 
 \end{thebibliography}
